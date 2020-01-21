@@ -14,12 +14,12 @@
             "tabs",
             "<all_urls>"
         ],
-    "background": {
-        "scripts": [
-            "bg.js"
-        ],
-        "persistent": false
-    },
+    // "background": {
+    //     "scripts": [
+    //         "bg.js"
+    //     ],
+    //     "persistent": false
+    // },
     "content_scripts": [
         {
             "matches": [
