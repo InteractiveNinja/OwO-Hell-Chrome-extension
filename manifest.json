@@ -1,6 +1,6 @@
 {
     "name": "OwO Hell",
-    "description": "Enter the World of the OwO Hello (。O ω O。)",
+    "description": "Enter the Hello of OwO (。O ω O。)",
     "version": "1.0",
     "manifest_version": 2,
     "browser_action": {
@@ -20,6 +20,9 @@
     //     ],
     //     "persistent": false
     // },
+    "icons": { "16": "icon.png",
+        "48": "icon.png",
+       "128": "icon.png" },
     "content_scripts": [
         {
             "matches": [
