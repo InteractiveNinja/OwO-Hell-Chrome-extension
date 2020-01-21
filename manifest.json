@@ -14,12 +14,6 @@
             "tabs",
             "<all_urls>"
         ],
-    // "background": {
-    //     "scripts": [
-    //         "bg.js"
-    //     ],
-    //     "persistent": false
-    // },
     "icons": { "16": "icon.png",
         "48": "icon.png",
        "128": "icon.png" },
