@@ -1,0 +1,36 @@
+{
+    "name": "OwO Hell",
+    "description": "Enter the World of the OwO Hello (。O ω O。)",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": 
+        [
+            "declarativeContent",
+            "activeTab",
+            "tabs",
+            "<all_urls>"
+        ],
+    "background": {
+        "scripts": [
+            "bg.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "jquery.js",
+                "script.js"
+            ],
+            "run_at": "document_end",
+            "all_frames": true
+        }
+    ]
+}
