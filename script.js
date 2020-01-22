@@ -10,26 +10,20 @@ function OwoifyText(v) {
     return v;
 };
 
+
+//Wechselt das Suchlogo
+$(".logo > a > img").attr("src", chrome.extension.getURL("imgs/logo.png"));
+//Wechselt das Google Startseiten Logo
+$("canvas").after("<img src='"+ chrome.extension.getURL("imgs/logo.png") +"'></img>").remove();
+
+// Verwandelt die Elemente in OwO Text
+
 $('div').contents().filter(function () {
     return this.nodeType == 3
 }).each(function () {
     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
 });
 
-$(".logo > a > img").attr("src", chrome.extension.getURL("imgs/logo.png"));
-
-// var canvas = $("#hplogo > canvas")[0]; // only get first one
-// var context = canvas.getContext("2d");
-// var img = new Image();
-// img.src = chrome.extension.getURL("imgs/logo.png");
-// img.onload = function() {
-// context.drawImage(img, 50, 50);
-// };
-
-// //$(".logo").children().attr("src", chrome.extension.getURL("imgs/logo.png"))
-
-
-//$("#hplogo").empty();
 $('h1').contents().filter(function () {
     return this.nodeType == 3
 }).each(function () {
