@@ -10,3 +10,9 @@ Ya know
 
 I wish you fun with the Plugin and I fell already sorry for your Eyes
 
+
+## Screenshots
+
+![screenshot1.png](imgs/screenshot.png "Here what it would look like on Wikipedia")
+
+![screenshot2.png](imgs/screenshot2.png "Here the Google Main Page")
