@@ -16,7 +16,18 @@ $('div').contents().filter(function () {
     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
 });
 
-$("#hplogo").attr("src", chrome.extension.getURL("imgs/logo.png"))
+$(".logo > a > img").attr("src", chrome.extension.getURL("imgs/logo.png"));
+
+// var canvas = $("#hplogo > canvas")[0]; // only get first one
+// var context = canvas.getContext("2d");
+// var img = new Image();
+// img.src = chrome.extension.getURL("imgs/logo.png");
+// img.onload = function() {
+// context.drawImage(img, 50, 50);
+// };
+
+// //$(".logo").children().attr("src", chrome.extension.getURL("imgs/logo.png"))
+
 
 //$("#hplogo").empty();
 $('h1').contents().filter(function () {
