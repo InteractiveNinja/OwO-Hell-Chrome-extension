@@ -16,7 +16,9 @@ $('div').contents().filter(function () {
     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
 });
 
+$("#hplogo").attr("src", chrome.extension.getURL("imgs/logo.png"))
 
+//$("#hplogo").empty();
 $('h1').contents().filter(function () {
     return this.nodeType == 3
 }).each(function () {
