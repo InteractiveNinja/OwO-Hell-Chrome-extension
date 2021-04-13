@@ -1,0 +1,22 @@
+{
+  "name": "owo-hell-chrome-extension",
+  "version": "2.0.0",
+  "description": "a Chrome Plugin that OwOfies your Text on your sites",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InteractiveNinja/OwO-Hell-Chrome-extension.git"
+  },
+  "author": "InteractiveNinja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InteractiveNinja/OwO-Hell-Chrome-extension/issues"
+  },
+  "homepage": "https://github.com/InteractiveNinja/OwO-Hell-Chrome-extension#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
+}
