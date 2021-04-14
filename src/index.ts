@@ -86,4 +86,8 @@
 // }).each(function () {
 //     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
 // });
-console.log("test")
+
+
+chrome.runtime.onInstalled.addListener(() =>{
+    console.log("Hallo Welt :)")
+})
