@@ -88,6 +88,8 @@
 // });
 
 
-chrome.runtime.onInstalled.addListener(() =>{
-    console.log("Hallo Welt :)")
-})
+// chrome.browserAction.onClicked.addListener(() =>{
+//     console.log("Hallo Welt :)")
+// })
+
+console.log("hallo welt")
