@@ -6,6 +6,10 @@
     "dev": "parcel watch src/index.ts",
     "build": "parcel build src/index.ts"
   },
+  "staticFiles": {
+    "staticPath": "static",
+    "watcherGlob": "**/*.json"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/InteractiveNinja/OwO-Hell-Chrome-extension.git"
