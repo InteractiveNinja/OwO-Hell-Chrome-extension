@@ -16,86 +16,18 @@ function OwoifyText(v) {
 // //Wechselt das Google Startseiten Logo
 // $("canvas").after("<img src='"+ chrome.extension.getURL("imgs/logo.png") +"'></img>").remove();
 
-// // Verwandelt die Elemente in OwO Text
-
-// $('div').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
-// });
-
-// $('h1').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
-
-// });
-
-// $('h2').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
-
-// });
-
-// $('h3').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
-
-// });
-
-// $('span').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
-
-// });
-
-// $('p').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
-
-// });
 
 
-// $('button').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
+let textElements : NodeListOf<Element> = document.querySelectorAll("p,h1,h2,h3,a");
 
-// });
-
-// $('input').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
-
-// });
-
-// $('li').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
-    
-// });
-
-// $('a').contents().filter(function () {
-//     return this.nodeType == 3
-// }).each(function () {
-//     this.textContent = this.textContent.replace(this.textContent, OwoifyText(this.textContent));
-// });
+let imageElements : NodeListOf<Element> = document.querySelectorAll("img");
 
 
-// chrome.browserAction.onClicked.addListener(() =>{
-//     console.log("Hallo Welt :)")
-// })
-
-
-let elements : NodeListOf<Element> = document.querySelectorAll("p,h1,h2,h3,a");
-
-elements.forEach(e => {
+textElements.forEach(e => {
     e.textContent = OwoifyText(e.textContent);
+})
+
+imageElements.forEach(e =>{
+    // e.setAttribute("src",)
 })
 

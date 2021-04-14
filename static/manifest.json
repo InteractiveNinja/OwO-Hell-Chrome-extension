@@ -2,11 +2,14 @@
     "name": "OwOfies",
     "description": "a Chrome Plugin that OwOfies your Text on your sites",
     "version": "2.0.0",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "permissions": ["activeTab"],
     "content_scripts": [{
         "matches": ["https://*/*"],
         "js": ["index.js"],
         "run_at":"document_end"
-    }]
+    }],
+    "icons": { 
+        "400": "assets/icon.png"
+    }
 }
